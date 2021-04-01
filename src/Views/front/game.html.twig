@@ -1,0 +1,100 @@
+{% extends 'layout.html.twig' %} {% block title %} Scenarium Accueil {% endblock
+%} {% block content %}
+<section class="relative game">
+  {% include './front/_menu.html.twig' %}
+  <div id="menu-burger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <section id="game_screen1" class="screen screen1 position-relative game_screen1">
+    <div class="  texteDroite d-flex flex-column align-items-center justify-content-center">
+      <h2 class="titrePrincipal">Le jeu</h2>
+      <p>SCENARIUM est un jeu de rôle développé par plusieurs générations d'étudiant.e.s en DUT Métiers du
+        Multimédia et de l'Internet à l'IUT d'Angoulême.
+        Il réunit chaque année des élèves attiré.e.s par les jeux et motivé.e.s pour élargir un peu plus l'univers
+        fantastique.
+        Chaque équipe successive a pour objectif de développer les points suivants :
+
+      </p>
+      <ul>
+        <li>Etendre le matériel du jeu (cartes, map…)</li>
+        <li>Imaginer ou compléter un univers</li>
+        <li>Développer un site web pour présenter le projet</li>
+        <li>Organiser des tests du jeu auprès d'autres étudiant.e.s</li>
+      </ul>
+
+      <a class="btn btn-outline-light game_screen1_link" href="{{ url( '/conception' ) }}">
+        LES CONCEPTEURS
+      </a>
+    </div>
+
+    <h1 class="position-absolute onglet">SCENARIUM</h1>
+    <a href="#game_screen2" class="arrow_down d-none d-md-inline"><i class="fas fa-chevron-down"></i></a>
+
+
+  </section>
+  <section id="game_screen2" class="screen position-relative game_screen2">
+
+    <div class="container">
+
+      <div class="row">
+        <div
+          class="d-none col-12 col-md-6 d-md-flex flex-column align-items-center justify-content-center game_screen2_left">
+          <h2>Comment jouer?</h2>
+          <img src="{{ asset( '/img/castle.jpg' ) }}" alt="castle">
+
+        </div>
+        <div
+          class=" d-flex flex-column col-md-6 align-items-center justify-content-md-center justify-content-around game_screen2_right">
+          <h2 class="d-md-none">Comment jouer?</h2>
+          <p>Le jeu de rôle "sur table" est un jeu de société où les
+            joueurs construisent ensemble une fiction, basée sur
+            un scenario orchestré par un maître du jeu.
+            Scenarium vous propose deux univers différents : l'un
+            basé sur le thème classique de la Fantasy et l'autre
+            inspiré des Signes du Zodiaque. Les règles du jeu sont
+            les mêmes pour les deux univers, seuls les scenarios
+            seront différents.
+          </p>
+          <a class="btn btn-outline-light game_screen2_link" href="{{ asset('/docs/regles.pdf') }}" download>TELECHARGER
+            LES REGLES</a>
+        </div>
+      </div>
+      <a href="#game_screen1" class="arrow_up d-none d-md-inline"><i class="fas fa-chevron-up"></i></a>
+      <a href="#game_screen3" class="arrow_down d-none d-md-inline"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+
+  <section id="game_screen3" class="screen position-relative game_screen3 ">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <h2>Les univers de Scenarium</h2>
+      <div class="row ">
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center">
+          <h3>L'astrologie</h3>
+          <p>L'univers astrologique est la nouveauté de cette année ! Dans ce monde, vous interpréterez des
+            prophéties,
+            rencontrerez des divinités assoiffées de sang et devrez faire équipe avec vos pires ennemis pour
+            espérer
+            survivre...</p>
+        </div>
+        <div class="d-none col-12 col-md-4 d-md-flex flex-column align-items-center justify-content-center">
+          <img src="{{ asset( '/img/cartes.png' ) }}" alt="cartes">
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center">
+          <h3>Fantasy</h3>
+          <p>
+            L'univers fantasy est l'univers du jeu de rôle par excellence ! Incarnez un Mage, une Barbare ou une
+            Archère
+            et lancez-vous dans l'aventure ! Vous devrez combattre des créatures malfaisantes seul.e ou en groupe
+            pour
+            espérer remplir votre objectif …
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="#game_screen2" class="arrow_up d-none d-md-inline"><i class="fas fa-chevron-up"></i></a>
+  </section>
+</section>
+{% endblock %}

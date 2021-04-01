@@ -1,0 +1,42 @@
+{% extends 'layout.html.twig' %} {% block title %} Scenarium Contact {% endblock
+%} {% block content %}
+<section class="relative contact">
+    {% include './front/_menu.html.twig' %}
+    <div id="menu-burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <section id="contact_screen1" class="screen screen1 position-relative contact_screen1 ">
+
+        <div class=" texteDroite d-flex flex-column align-items-center justify-content-end ">
+            <h2 class="titrePrincipal">Nous contacter</h2>
+            <p>IUT d'Angoulême ~Département MMI </p>
+            <p>4 avenue de Varsovie</p>
+            <p>16000 Angoulême</p>
+            <p>05.45.xx.xx.xx</p>
+            <h3>Nous contacter par email:</h3>
+            <form action="{{ url( '/contact') }}" method="POST" enctype="multipart/form-data"
+                class=" d-flex flex-column align-items-center col-md-10 ">
+                <div class="col">
+                    <input type="text" name="mail" class="form-control" placeholder="adresse email" />
+                </div>
+                <div class="col">
+                    <input type="text" name="nom" class="form-control" placeholder="votre nom" />
+                </div>
+                <div class="col">
+                    <textarea name="message" class="form-control" placeholder="Votre message"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                    Envoyer
+                </button>
+            </form>
+            <p class="{% if message == true %}d-block{% else %}
+				d-none{% endif %}">Message envoyé!</p>
+        </div>
+        <h1 class="position-absolute onglet">SCENARIUM</h1>
+    </section>
+
+
+    {% endblock %}

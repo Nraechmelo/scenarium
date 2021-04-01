@@ -1,0 +1,57 @@
+{% extends 'layout.html.twig' %} {% block title %} Scenarium Accueil {% endblock
+%} {% block content %}
+<section class="relative ressources">
+    {% include './front/_menu.html.twig' %}
+    <div id="menu-burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <section id="ressources_screen1" class="screen screen1 position-relative ressources_screen1 ">
+        <div class=" texteDroite d-flex flex-column align-items-center justify-content-center">
+            <h2 class="titrePrincipal">Les ressources</h2>
+            <p>Vous avez envie d'enrichir votre expérience de jeu ? Ou tout simplement d'en savoir plus sur
+                SCENARIUM ?
+                Vous trouver ici des ressources complémentaires afin de prolonger vos parties.
+                Si vous êtes Maître du Jeu, les différents scénarios sont là pour vous inspirer.
+                Si vous souhaitez pimenter vos parties, de nouvelles cartes et idées seront régulièrement
+                ajoutées pour apporter un souffle de nouveauté.
+            </p>
+        </div>
+        <h1 class="position-absolute onglet">SCENARIUM</h1>
+        <a href="#ressources_screen2" class="arrow_down d-none d-md-inline"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <section id="ressources_screen2" class="screen screen2 position-relative ressources_screen2">
+
+        <div class="container">
+
+            <div class="row">
+                <div
+                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center justify-content-around ressources_screen2_left">
+                    <h2>Les scénarios</h2>
+                    <a class="btn btn-outline-light ressources_screen2_link" href="{{ asset('/docs/scenario.pdf') }}"
+                        download>Scénario 1 (à paraître)</a>
+
+                </div>
+                <div
+                    class=" d-flex flex-column col-md-6 align-items-center justify-content-md-center justify-content-around ressources_screen2_right">
+                    <h2 class="">Les cartes</h2>
+                    <a class="btn btn-outline-light ressources_screen2_link"
+                        href="{{ asset('/docs/cartes_fantasy.pdf') }}" download>Cartes univers Fantasy</a>
+                    <a class="btn btn-outline-light ressources_screen2_link"
+                        href="{{ asset('/docs/cartes_zodiaque.pdf') }}" download>Cartes univers Zodiaque</a>
+                    <div class=" d-flex flex-row justify-content-center">
+                        <img src="{{ asset('/img/EVENT.png') }}" alt="evènement fantasy" />
+                        <img src="{{ asset('/img/PNJ.png') }}" alt="marchand fantasy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#ressources_screen1" class="arrow_up d-none d-md-inline"><i class="fas fa-chevron-up"></i></a>
+    </section>
+
+</section>
+
+{% endblock %}

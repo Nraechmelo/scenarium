@@ -1,0 +1,25 @@
+{% extends 'layout.html.twig' %} {% block title %} Scenarium Accueil {% endblock
+%} {% block content %}
+<section class="relative home">
+  {% include './front/_menu.html.twig' %}
+  <div id="menu-burger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <section class="screen screen1 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 d-flex align-items-center">
+          <div class="titre" id="titleleft">
+            <h1>SCENARIUM</h1>
+            <h2>Vivez l 'imaginaire</h2>
+            <a class="btn btn-outline-light decouvrir" href="{{ url( '/game' ) }}"> DÉCOUVRIR</a>
+          </div>
+        </div>
+        <div class="d-none d-md-flex col-md-8"></div>
+      </div>
+    </div>
+  </section>
+</section>
+{% endblock %}

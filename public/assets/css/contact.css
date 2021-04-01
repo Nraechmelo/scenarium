@@ -1,0 +1,52 @@
+.contact #menu {
+    background-color: black;
+}
+
+.contact .screen1 {
+    background: url(../img/bg_contact.png) no-repeat center center fixed;
+    background-color: white;
+}
+
+.contact_screen1 .titrePrincipal {
+    margin-top: 0vh;
+    text-shadow: none;
+    margin-bottom: 2vh;
+}
+
+.contact_screen1 .texteDroite {
+    width: 40vw;
+    margin-left: 55vw;
+    padding-top: 20vh;
+    height: auto;
+}
+
+h3 {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-family: 'Newsreader', serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-style: italic;
+}
+
+.contact_screen1 form {
+    height: auto;
+}
+
+.contact_screen1 form>div {
+    padding-bottom: 2vh;
+}
+
+.contact_screen1 button {
+    background-color: black;
+    border: none;
+}
+
+@media screen and (max-width: 813px) {
+    .contact_screen1 .texteDroite {
+        width: 100%;
+        margin-left: 0vw;
+        padding-top: 20vh;
+        height: auto;
+    }
+}

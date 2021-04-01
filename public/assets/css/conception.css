@@ -1,0 +1,68 @@
+.conception #menu {
+    background-color: #002F2D;
+}
+
+#menu-burger .bar {
+    background-color: #002F2D;
+}
+
+.conception_screen1 {
+    background: url(../img/bg_conception.png) no-repeat center center fixed;
+    background-color: #DCD7C9;
+}
+
+.conception .titrePrincipal {
+    text-shadow: #002F2D 1px 0 7px;
+}
+
+.conception_screen2 {
+    background-color: #002F2D;
+    color: white;
+}
+
+.conception_screen2 h2 {
+    margin-bottom: 0vh;
+}
+
+.conception_screen2 div {
+    text-align: center;
+}
+
+.conception .name {
+    margin-top: 2vh;
+    font-size: 1.3em;
+}
+
+.conception_screen2 img {
+    width: 80%;
+    height: auto;
+}
+
+/* Ecran 3  */
+
+.conception_screen3 {
+    background-color: #DCD7C9;
+    /* color: white; */
+}
+
+.conception_screen3 h2 {
+    text-shadow: #002F2D 1px 0 7px;
+}
+
+.conception_screen3 img {
+    width: 8vw;
+    margin-bottom: 2vh;
+}
+
+.conception_screen3 div {
+    text-align: center;
+}
+
+@media screen and (max-width: 813px) {
+    .conception .screen {
+        height: 90vh;
+    }
+    .conception_screen1 {
+        padding-top: 10vh;
+    }
+}

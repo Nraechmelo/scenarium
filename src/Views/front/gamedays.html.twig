@@ -1,0 +1,53 @@
+{% extends 'layout.html.twig' %} {% block title %} Scenarium Game Days {% endblock
+%} {% block content %}
+<section class="relative gamedays">
+    {% include './front/_menu.html.twig' %}
+    <div id="menu-burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <section id="gamedays_screen1" class="screen screen1 position-relative gamedays_screen1 ">
+        <div class=" texteDroite d-flex flex-column align-items-center justify-content-center">
+            <h2 class="titrePrincipal">Les Game Days</h2>
+            <p>Chaque année, les étudiants responsables du projet Scenarium organisent des "Game Days". Ces journées
+                sont pour eux l'occasion de faire découvrir aux autres étudiants l'avancée du projet et surtout de
+                tester leurs réalisations.
+                Ces rencontres, organisées habituellement au mois de janvier/février, sont le moyen de recueillir
+                l'expérience de jeu de personnes initiées ou non au fonctionnement du jeu de rôle et permettent ainsi
+                d'améliorer le jeu avant la fin de l'année.
+                Retrouvez ici les vidéos tournées durant les Game Days !
+            </p>
+        </div>
+        <h1 class="position-absolute onglet">SCENARIUM</h1>
+        <a href="#gamedays_screen2" class="arrow_down d-none d-md-inline"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <section id="gamedays_screen2" class="screen screen2 position-relative gamedays_screen2">
+
+        <div class="container">
+
+            <div class="row">
+                <div
+                    class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-md-center justify-content-around gamedays_screen2_left">
+                    <h2>Game Day du 13 février 2020</h2>
+                    <p>Une séance de 3 heures, en compagnie de 6 joueurs !
+                        Les retours, positifs, ont permis à l'équipe d'améliorer le jeu.</p>
+
+                </div>
+                <div
+                    class=" d-flex flex-column col-md-8 align-items-center justify-content-md-center justify-content-around gamedays_screen2_right">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hmlSGrownD4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+        <a href="#gamedays_screen1" class="arrow_up d-none d-md-inline"><i class="fas fa-chevron-up"></i></a>
+    </section>
+
+</section>
+
+{% endblock %}

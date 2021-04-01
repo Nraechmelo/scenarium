@@ -1,0 +1,39 @@
+.ressources #menu {
+    background-color: #BC8034;
+}
+
+.ressources .screen1 {
+    background: url(../img/bg_ressources.png) no-repeat center center fixed;
+    background-color: #DCD7C9;
+}
+
+/*Screen2*/
+
+.ressources_screen2 {
+    background-color: #BC8034;
+    background-size: cover;
+}
+
+.ressources_screen2 h2 {
+    color: white;
+    margin-bottom: 5vh;
+}
+
+.ressources_screen2 a {
+    margin-bottom: 2vh;
+    width: 50%;
+    color: #DCD7C9;
+}
+
+.ressources_screen2 img {
+    width: 8vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+@media screen and (max-width: 813px) {
+    .ressources .screen {
+        height: 100vh;
+    }
+}

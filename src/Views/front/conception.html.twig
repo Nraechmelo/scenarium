@@ -1,0 +1,102 @@
+{% extends 'layout.html.twig' %} {% block title %} Scenarium Conception {% endblock
+%} {% block content %}
+<section class="relative conception">
+    {% include './front/_menu.html.twig' %}
+    <div id="menu-burger">
+        <div class="bar1 bar"></div>
+        <div class="bar2 bar"></div>
+        <div class="bar3 bar"></div>
+    </div>
+
+    <section id="conception_screen1" class="screen screen1 position-relative conception_screen1 ">
+        <div class=" texteDroite d-flex flex-column align-items-center justify-content-center">
+            <h2 class="titrePrincipal">Les concepteurs</h2>
+            <p>Depuis maintenant 5 ans, le projet est repris par un groupe d'étudiants différent. Le projet en lui-même
+                évolue au gré des approches de chacun.
+
+                Ainsi, l'objectif du projet en 2016 était de populariser le jeu de rôle qui souffrait, selon le groupe
+                d'étudiants, de l'opacité des règles pour les non-initiés.
+
+                Au fur et à mesure de l'évolution de Scenarium, d'autres objectifs se sont ajoutés, ou ont parfois été
+                mis de côtés. Maintenant, il s'agit de créer un jeu reproductible et commercialisable, aux règles
+                claires et à la communication numérique solide via un site web dédié.
+
+
+
+
+
+
+
+            </p>
+        </div>
+        <h1 class="position-absolute onglet">SCENARIUM</h1>
+        <a href="#conception_screen2" class="arrow_down d-none d-md-inline"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <section id="conception_screen2" class="screen screen2 position-relative conception_screen2">
+
+        <div class="container">
+
+            <div class="row">
+                <div
+                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center justify-content-around conception_screen2_left">
+                    <h2>Notre équipe</h2>
+                    <div>
+                        <p class="name">BOUCHERON Manon</p>
+                        <p>Développement et réadaptation des règles</p>
+                        <p>Graphismes des carnets (bestiaires, règles et fiches
+                            de jeu)</p>
+                        <p class="name">HERVOUET Noa</p>
+                        <p>Dessin des nouvelles cartes (univers des signes du Zodiaque)</p>
+                        <p class="name">CAUCHOIS Rachel</p>
+                        <p>Design et conception du nouveau site web</p>
+                    </div>
+
+                </div>
+                <div
+                    class=" d-none d-md-flex flex-column col-md-6 align-items-center justify-content-md-center  conception_screen2_right">
+
+                    <img src="{{ asset('/img/sun.png') }}" alt="evènement fantasy" />
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <a href="#conception_screen1" class="arrow_up d-none d-md-inline"><i class="fas fa-chevron-up"></i></a>
+        <a href="#conception_screen3" class="arrow_down d-none d-md-inline"><i class="fas fa-chevron-down"></i></a>
+    </section>
+    <section id="conception_screen3" class="screen screen3 position-relative conception_screen3 ">
+
+        <div class="container">
+
+            <div class="row">
+                <div
+                    class="d-none d-md-flex col-12 col-md-6  flex-column align-items-center justify-content-md-center justify-content-around conception_screen2_left">
+                    <img src="{{ asset('/img/glaive.png') }}" alt="evènement fantasy" />
+                    <img src="{{ asset('/img/potion.png') }}" alt="evènement fantasy" />
+                    <img src="{{ asset('/img/guerre.png') }}" alt="evènement fantasy" />
+
+                </div>
+                <div
+                    class=" d-flex flex-column col-md-6 align-items-center justify-content-md-center justify-content-around conception_screen2_right">
+                    <h2>Nos prédécesseurs</h2>
+                    <div>
+                        <p class="name">2019 / 2020</p>
+                        <p>HOUSSEAU Killian ~ PHELIPOT Romane ~ DUBREUCQ Emilie</p>
+                        <p class="name">2018 / 2019</p>
+                        <p>DE MARTEL CLAIRE ~ VIDENTE Alexandre ~ VOLLETTE NEVEU Evan</p>
+                        <p class="name">2017 / 2018</p>
+                        <p>RENE Samira ~ ROSENBERG Maéva ~ PINEAUD Noémie</p>
+                        <p class="name">2016 / 2017</p>
+                        <p>BOUYSSOU Nicolas ~ SARCIAT Damien ~ PESTANA Malik</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <a href="#conception_screen2" class="arrow_up d-none d-md-inline"><i class="fas fa-chevron-up"></i></a>
+    </section>
+</section>
+
+{% endblock %}

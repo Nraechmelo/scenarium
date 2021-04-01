@@ -1,0 +1,144 @@
+.game #menu {
+    background-color: #01203A;
+}
+
+.game {
+    color: #132148;
+}
+
+.game_screen1 {
+    background: url(../img/bg_md_2.png) no-repeat center center fixed;
+    background-color: #DCD7C9;
+    background-size: cover;
+}
+
+.game p, .game_screen1 ul {
+    margin-bottom: 2vh;
+}
+
+.game_screen1 li::before {
+    content: "♠";
+    padding-right: 8px;
+    color: #132148;
+}
+
+.game_screen1 a {
+    font-weight: 600;
+    color: #01203A;
+}
+
+.game_screen1_link {
+    border-color: #132148;
+}
+
+@media screen and (max-width: 813px) {
+    .game_screen1 {
+        background: url(../img/game_sm.png) no-repeat center center fixed;
+        background-color: #01203A;
+        color: white;
+        padding-top: 10vh;
+    }
+    .game_screen1 a {
+        border-color: white;
+        color: white;
+    }
+}
+
+/*Screen2*/
+
+.game_screen2 {
+    background-color: #01203A;
+    background-size: cover;
+}
+
+.game_screen2 h2 {
+    text-shadow: #DCD7C9 1px 0 10px;
+    color: #DCD7C9;
+}
+
+.game_screen2_left img {
+    margin-top: 10%;
+    width: 40vw;
+}
+
+.game_screen2_right {
+    color: #DCD7C9;
+}
+
+.game_screen2_link {
+    border-color: #DCD7C9
+}
+
+/*Screen 3 */
+
+.game_screen3 {
+    background-color: #DCD7C9;
+    text-align: center;
+}
+
+/* .game_screen3>div {
+    height: 100%;
+} */
+
+.game_screen3 .container {
+    height: 100%;
+}
+
+.game_screen3 .row {
+    height: 70%;
+    padding-top: 0%;
+}
+
+.game_screen3 .row div {
+    height: 100%;
+}
+
+.game_screen3 h2 {
+    height: 10%;
+    margin-top: 0;
+}
+
+.game_screen3 h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    padding-bottom: 1em;
+    color: #01203A;
+}
+
+.game_screen3 p {
+    color: #01203A;
+}
+
+.game_screen3 img {
+    width: auto;
+    height: 90%;
+}
+
+@media screen and (max-width: 813px) {
+    .game_screen3 p, .game_screen2 p {
+        text-align: center;
+        margin: 0;
+    }
+    .game_screen3 .container {
+        width: 95vw;
+    }
+    .game_screen3 img {
+        width: 40%;
+        height: auto;
+    }
+    .game_screen3 .row>div {
+        height: auto;
+        padding: 1vw;
+        width: 72%;
+    }
+    .game_screen3 h2 {
+        height: auto;
+        text-align: center;
+    }
+    .game_screen3 h3 {
+        font-size: 2rem;
+    }
+    .game .screen {
+        height: 100vh;
+    }
+}

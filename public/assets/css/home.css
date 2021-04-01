@@ -1,0 +1,41 @@
+.home .titre {
+    text-align: center;
+    color: white;
+}
+
+.home .screen1 {
+    background: url(../img/accueil.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.home .screen1 h2 {
+    margin-top: 2rem;
+}
+
+.home .titre .decouvrir {
+    margin-top: 2rem;
+    box-shadow: pink 1px 0 10px;
+    text-shadow: pink 1px 0 10px;
+    font-size: 2rem;
+    font-family: "Yusei Magic", sans-serif;
+}
+
+.home .titre .decouvrir:hover {
+    text-shadow: none;
+    color: #01203A;
+}
+
+@media screen and (max-width: 813px) {
+    .home .screen1 {
+        background: url(../img/bg_sm_1.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .home .titre {
+        padding-top: 40vh;
+        width: 100%;
+    }
+    .home .titre .decouvrir {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
